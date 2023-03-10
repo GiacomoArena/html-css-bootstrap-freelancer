@@ -1,0 +1,16 @@
+.debug{
+  background-color: rgba(137, 43, 226, 0.422);
+  border: 1px solid black;
+}
+
+
+
+.barra-superiore{
+  height: 80px;
+  
+  /* align-items: centerq; */
+}
+
+.my-jumbotron{
+  
+}
