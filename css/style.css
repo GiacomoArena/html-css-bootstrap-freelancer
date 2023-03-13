@@ -39,6 +39,9 @@ header a{
   color: var(--bianco);
   text-transform: uppercase;
 }
+.star{
+  margin: 15px 0;
+}
 .star i{
   color: white;
   font-size: 1.5rem;
@@ -57,31 +60,76 @@ header a{
   background-color: white;
 }
 .my-jumbotron h5{
-  text
+  font-size: 1.2rem;
+  color: var(--bianco);
+  font-weight: 600;
 }
 /* jumbotron   */
-
+/* portfolio */
 .portfolio{
-  background-color: rgb(160, 107, 43);
+  color: var(--bootstrapblue);
 }
-.cards{
-  background-color: rgb(92, 8, 90);
-  border: 1px solid white;
+.portfolio h2{
+  margin: 30px 0;
+  font: 1.5rem;
+  font-weight: 600;
+}
+.portfolio .star .barra{
+  background-color: var(--bootstrapblue);
+}
+.portfolio .star span i{
+  color: var(--bootstrapblue);
+}
+.row .col .cards{
+  border-radius: 100px;
 }
 .cards img{
+  border-radius: 10px;
   width: 100%;
   object-fit: cover;
 }
-.my-py{
-  padding-top: 10px;
-  padding-bottom: 70px;
-}
-
+/* \\portfolio */
+/* about */
+#about{
+  background-color: #1ABC9C;
+  color: var(--bianco);
+  font-weight: 500;
+  padding-bottom: 50px;
+  }
 .sc-container{
   width: 60%;
   margin: 0 auto;
 }
+#about h2{
+  color: var(--bianco);
+  padding-top: 30px;
+  font: 1.5rem;
+  font-weight: 600;
+}
+.button{
+  margin-top: 55px;
+}
+.button a{
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* \\about */
 /* Contact */
+#contact-me h2{
+  color: var(--bootstrapblue);
+  font: 1.5rem;
+  font-weight: 600;
+}
+#contact-me .star .barra{
+  background-color: var(--bootstrapblue);
+}
+#contact-me .star span i{
+  color: #3A546D;
+}
 .ms-form input, .ms-form textarea{
   border-left: none;
   border-top: none;
@@ -106,8 +154,31 @@ header a{
   box-shadow: 0 1px 0 0 rgba(13,110,253,.25);
 }
 /* Contact */
-
+/* footer  */
 .info-social{
-  background-color: darkmagenta;
+  color: var(--bianco);
+  padding: 30px;
+  background-color:#3A546D;
 }
-.s
+.info-social h5{
+  text-transform: uppercase;
+}
+.info-social span{
+  text-transform: capitalize;
+}
+.info-social a{
+  text-decoration: none;
+  color: #1CB89A;
+}
+.social i{
+  font-size: 1rem;
+  padding: 13px;
+  margin: 0px 3px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.copyright{
+  padding: 30px;
+  color: var(--bianco);
+  background-color: var(--bootstrapblue);
+}
