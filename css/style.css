@@ -8,7 +8,6 @@
 .barra-superiore{
   height: 80px;
   
-  /* align-items: centerq; */
 }
 
 .my-jumbotron{
@@ -37,4 +36,32 @@
 
 .info-social{
   background-color: darkmagenta;
+}
+.sc-container{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.ms-form input, .ms-form textarea{
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.ms-form input::placeholder, 
+.ms-form textarea::placeholder{
+  color: black;
+}
+
+.ms-form button{
+  background: #1ABC9C;
+  border: none;
+  
+}
+
+.ms-form input:focus,
+.ms-form textarea:focus{
+  box-shadow: 0 1px 0 0 rgba(13,110,253,.25);
 }

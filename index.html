@@ -14,15 +14,19 @@
 <body>
 
   <header class="bg-info h-100">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-md-center">
         <!-- colonne della barra superiore  -->
-        <div class="col-6 col-md-5 col-lg-4 barra-superiore debug align-items-center d-flex">
+        <div class="col barra-superiore debug align-items-center d-flex">
           LOGO
         </div>
-        <div class="d-none d-lg-block col-lg-1"></div>
-        <div class="col-6 col-md-5 col-lg-4 barra-superiore debug justify-content-end align-items-center d-flex">
+        <!-- <div class="d-none d-lg-block col-lg-1"></div> -->
+        <div class="col d-none d-lg-block colbarra-superiore debug justify-content-end align-items-center d-flex">
           H
+        </div>
+
+        <div class="d-lg-none col barra-superiore debug justify-content-end align-items-center d-flex">
+          Haa
         </div>
         <!-- colonne della barra superiore  -->
       </div>
@@ -56,90 +60,93 @@
       </div>
       <!-- cards  -->
       <div class="container-fluid">
-        <div class="row justify-content-center ">
-          <div class="col-sm-3 col-lg-3 mx-2   cards">
-            <img src="img/orso.jpg" alt="orso">
+        <!-- possiamo dare direttamente alla row quante colonne devono esserci in base alle misure dello schermo che ci interesano. -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 m-5">
+          <div class="col  mb-3  cards">
+            <img src="img/cabin.png" alt="orso">
           </div>
-          <div class="col-sm-3 col-lg-3 mx-2   cards">
-            <img src="img/orso.jpg" alt="orso">
+          <div class="col   mb-3  cards">
+            <img src="img/cake.png" alt="orso">
           </div>
-          <div class="col-sm-3 col-lg-3 mx-2   cards">
-            <img src="img/orso.jpg" alt="orso">
+          <div class="col   mb-3  cards">
+            <img src="img/circus.png" alt="orso">
           </div>
-          <div class="col-sm-3 col-lg-3 mx-2   cards">
-            <img src="img/orso.jpg" alt="orso">
+          <div class="col   mb-3  cards">
+            <img src="img/game.png" alt="orso">
           </div>
-          <div class="col-sm-3 col-lg-3 mx-2   cards">
-            <img src="img/orso.jpg" alt="orso">
+          <div class="col   mb-3  cards">
+            <img src="img/safe.png" alt="orso">
           </div>
-          <div class="col-sm-3 col-lg-3 mx-2   cards">
-            <img src="img/orso.jpg" alt="orso">
+          <div class="col    mb-3 cards">
+            <img src="img/submarine.png" alt="orso">
           </div>
           <!-- \\\cards\\\ -->
         </div>
       </div>
     </div>
 
-    <div class="my-about">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 debug  flex-column justify-content-center align-items-center d-flex">
-            <h1>about</h1>
-            <div>stella</div>
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis minus libero quam repel
-                </p>
-              </div>
-              <div class="col-md-6">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis minus libero quam repellat assumenda aliquam,
-                </p>
-              </div>
+    <section id="about" class="my-5">
+      <div class="container text-center">
+        <h2>about</h2>
+        <div class="star">*</div>
+      </div>
+      <div class="sc-container">
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cum voluptates non ad voluptate dignissimos in excepturi cumque! Omnis nesciunt dignissimos temporibus aliquam iste fugiat optio corrupti facere alias autem?
             </div>
-            <div>
-              <a href="#">downlad</a>
-            </div>        
+            <div class="col-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cum voluptates non ad voluptate dignissimos in excepturi cumque! Omnis nesciunt dignissimos temporibus aliquam iste fugiat optio corrupti facere alias autem?
+            </div>
+          </div>
+          <div class="button text-center">
+            BOTTONE
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="contact-me">
+      <div class="container text-center">
+        <h2>contacts</h2>
+        <div class="star">*</div>
+      </div>
+    </div>
+
+    <div class="sc-container">
       <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col col-12 col-md-10 col-lg-8 debug text-center">
-            <h1>contact me</h1>
-            <div>stella</div>
-          </div>
-          <div class=" col-6 col-sm-10 col-lg-8 debug flex-column d-flex justify-content-center">
-            <section class="border-bottom border-danger py-2">
-              <span>Name</span>
-            </section>
+        <div class="row">
+          <div class="col">
+            <div class="container">
+              <div class="row justify-content-center py-5">
+                <div class="col">
+                  <form class="ms-form" action="">
 
-            <section class="border-bottom border-danger py-2">
-              <span>
-                Email Address
-              </span>
-            </section>
-            
-            <section class="border-bottom border-danger py-2">
-              <span>
-                Phone Number
-              </span>
-            </section>
-
-            <section class="border-bottom border-danger my-py">
-              <span>
-                Message
-              </span>
-            </section>
-            <section class="">
-              <button>
-                send
-              </button>
-            </section>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    
+                    <div class="mb-3">
+                      
+                      <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                    
+                    <div class="mb-3">
+                      
+                      <input type="text" class="form-control" id="telephone" placeholder="Phone Number">
+                    </div>
+                    
+                    <div class="mb-3">
+                      
+                      <textarea class="form-control" id="textarea" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -155,7 +162,7 @@
     <div class="info-social">
       <div class="container-fluid ">
         <div class="row">
-          <div class="col flex-column align-content-around d-none d-sm-block text-center">
+          <div class="col flex-column align-content-around d-none d-md-block text-center">
             <h5>piccolo titolo</h5>
             <span>piccolo testo o loghi Lorem ipsum dolor sit amet.</span>
           </div>
@@ -163,7 +170,7 @@
             <h5>piccolo titolo</h5>
             <span>piccolo testo o loghi Lorem ipsum dolor sit amet.</span>
           </div>
-          <div class="col flex-column align-content-around d-none d-sm-block text-center">
+          <div class="col flex-column align-content-around d-none d-md-block text-center">
             <h5>piccolo titolo</h5>
             <span>piccolo testo o loghi Lorem ipsum dolor sit amet.</span>
           </div>
