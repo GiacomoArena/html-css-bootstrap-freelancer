@@ -1,19 +1,65 @@
-.debug{
-  background-color: rgba(137, 43, 226, 0.422);
-  border: 1px solid black;
+:root{
+  --bianco: white;
+  --bootstrapblue: #2C3E50;
 }
 
-
-
+/* header */
+header{
+  background-color:var(--bootstrapblue);
+}
 .barra-superiore{
   height: 80px;
-  
 }
-
+header h2{
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header a{
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  margin: 0px 20px;
+}
+/* header */
+/* jumbotron   */
 .my-jumbotron{
   height: 350px;
   background-color: #1ABC9C;
 }
+.my-jumbotron img{
+  width: 150px;
+}
+.my-jumbotron h2{
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--bianco);
+  text-transform: uppercase;
+}
+.star i{
+  color: white;
+  font-size: 1.5rem;
+}
+.burger-m{
+  padding: 0px 13px;
+  color: #888888;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  font-size: 1.5rem;
+}
+.star .barra{
+  margin: 10px 10px;
+  height: 3px;
+  width: 5vw;
+  background-color: white;
+}
+.my-jumbotron h5{
+  text
+}
+/* jumbotron   */
 
 .portfolio{
   background-color: rgb(160, 107, 43);
@@ -46,7 +92,7 @@
 
 .ms-form input::placeholder, 
 .ms-form textarea::placeholder{
-  color: #2C3E50;
+  color: var(--bootstrapblue);
 }
 
 .ms-form button{

@@ -9,24 +9,28 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="css/style.css">
   
-  <title>Document</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
+
+  <title>BOOTSTRAP</title>
 </head>
 <body>
 
-  <header class="bg-info h-100">
+  <header>
     <div class="container">
       <div class="row justify-content-md-center">
         <!-- colonne della barra superiore  -->
-        <div class="col barra-superiore debug align-items-center d-flex">
-          LOGO
+        <div class="col barra-superiore align-items-center d-flex">
+          <h2>start bootstrap</h2>
         </div>
         <!-- <div class="d-none d-lg-block col-lg-1"></div> -->
-        <div class="col d-none d-lg-flex barra-superiore debug justify-content-end align-items-center d-flex">
-          H
+        <div class="col d-none d-lg-flex barra-superiore justify-content-end align-items-center d-flex">
+          <a href="#">portfolio</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
         </div>
         
         <div class="d-lg-none col barra-superiore debug justify-content-end align-items-center d-flex">
-          Haa
+          <span class="burger-m"><i class="fa-solid fa-bars"></i></span>
         </div>
         <!-- colonne della barra superiore  -->
       </div>
@@ -38,11 +42,17 @@
     <div class="my-jumbotron">
       <div class="container-fluid h-100">
         <div class="row justify-content-center h-100">
-          <div class="col-12 col-md-10 col-lg-8 debug  flex-column justify-content-center align-items-center d-flex">
-            <h1>immagine</h1>
+          <div class="col-12 col-md-10 col-lg-8 flex-column justify-content-center align-items-center d-flex">
+            <img src="img/avatar.svg" alt="avatar">
             <h2>start bootstrap</h2>
-            <div>stella</div>
-            <h5>graphic artist-web designer-illustrator</h5>            
+            <div class="star flex-row d-flex">
+              <div class="barra"></div>
+              <span>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <div class="barra"></div>
+            </div>
+            <h5 class="text-uppercase">graphic artist-web designer-illustrator</h5>            
           </div>
         </div>
       </div>
